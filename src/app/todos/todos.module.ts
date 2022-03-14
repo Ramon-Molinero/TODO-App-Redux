@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { TodosAddComponent } from './todos-add/todos-add.component';
 import { TodosFooterComponent } from './todos-footer/todos-footer.component';
 import { TodosItemComponent } from './todos-item/todos-item.component';
@@ -16,7 +18,10 @@ import { TodosPageComponent } from './todos-page/todos-page.component';
     TodosListComponent,
     TodosPageComponent,
   ],
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule
+  ],
   exports: [TodosPageComponent],
 })
 export class TodosModule {}
