@@ -14,10 +14,9 @@ import { TodosPageComponent } from './todos-page/todos-page.component';
     TodosFooterComponent,
     TodosItemComponent,
     TodosListComponent,
-    TodosPageComponent
+    TodosPageComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [TodosPageComponent],
 })
-export class TodosModule { }
+export class TodosModule {}
