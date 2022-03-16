@@ -22,7 +22,16 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     TodosModule,
     ReactiveFormsModule,
-    StoreModule.forRoot({ todos: todoReducer }),
+    StoreModule.forRoot(
+      { todos: todoReducer },
+      {
+        // https://ngrx.io/guide/store/configuration/runtime-checks
+        runtimeChecks: {
+          strictStateImmutability: false,
+          strictActionImmutability: false,
+        },
+      }
+    ),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
