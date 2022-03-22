@@ -1,0 +1,16 @@
+.filters li a:focus {
+    box-shadow: none;
+    border: 1px solid #b83f45;
+    
+}
+
+.clear-completed:focus{
+    box-shadow: none;
+    text-decoration: none;
+    
+}
+.clear-completed:hover{
+    box-shadow: none;
+    text-decoration: none;
+    
+}
