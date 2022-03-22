@@ -7,6 +7,7 @@ import { TodosFooterComponent } from './todos-footer/todos-footer.component';
 import { TodosItemComponent } from './todos-item/todos-item.component';
 import { TodosListComponent } from './todos-list/todos-list.component';
 import { TodosPageComponent } from './todos-page/todos-page.component';
+import { FiltroPipe } from './pipes/filtro.pipe';
 
 
 
@@ -17,6 +18,7 @@ import { TodosPageComponent } from './todos-page/todos-page.component';
     TodosItemComponent,
     TodosListComponent,
     TodosPageComponent,
+    FiltroPipe,
   ],
   imports: [
     CommonModule,

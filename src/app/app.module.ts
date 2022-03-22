@@ -10,7 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 
 // ngrx
 import { StoreModule } from '@ngrx/store';
-import { todoReducer } from './store/reducers/todo.reducer';
+import { appReducers } from './store/models/state.interface';
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
@@ -23,7 +23,7 @@ import { environment } from 'src/environments/environment';
     TodosModule,
     ReactiveFormsModule,
     StoreModule.forRoot(
-      { todos: todoReducer },
+      appReducers,
       {
         // https://ngrx.io/guide/store/configuration/runtime-checks
         runtimeChecks: {
